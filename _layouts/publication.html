@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<article class="paper">
+  <p class="crumb"><a href="{{ '/publications/' | relative_url }}">← Publications</a></p>
+  <p class="venue-tag">{{ page.venue_short }} {{ page.year }}</p>
+  <h1>{{ page.title }}</h1>
+  <p class="authors">{{ page.authors }}</p>
+  <p class="venue">{{ page.venue }}</p>
+
+  {% if page.links %}
+  <p class="links">
+    {% for l in page.links %}<a class="btn" href="{{ l.url }}">{{ l.label }}</a>{% endfor %}
+  </p>
+  {% endif %}
+
+  {% if page.image %}
+  <figure>
+    <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title }}">
+    {% if page.image_caption %}<figcaption>{{ page.image_caption }}</figcaption>{% endif %}
+  </figure>
+  {% endif %}
+
+  {{ content }}
+
+  <h2>Citation</h2>
+  <pre class="cite">{{ page.citation }}</pre>
+</article>

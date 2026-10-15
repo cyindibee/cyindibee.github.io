@@ -1,0 +1,42 @@
+title: CyIndiBee
+description: Computer vision for monitoring honey bees — University of Puerto Rico, Río Piedras
+url: "https://cyindibee.github.io"
+baseurl: ""
+
+# Main WordPress site
+wordpress_url: "https://cyindibee.hpcf.upr.edu/"
+github_url: "https://github.com/cyindibee"
+
+# Top navigation (order matters)
+nav:
+  - title: Home
+    url: /
+  - title: Team
+    url: /team/
+  - title: Publications
+    url: /publications/
+
+# Each paper is one file in _publications/ and gets its own page
+collections:
+  publications:
+    output: true
+    permalink: /papers/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: publication
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+markdown: kramdown
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      <nav>
+        {% for item in site.nav %}
+          {% assign active = false %}
+          {% if page.url == item.url %}{% assign active = true %}{% endif %}
+          {% if item.url == '/publications/' and page.collection == 'publications' %}{% assign active = true %}{% endif %}
+          <a href="{{ item.url | relative_url }}"{% if active %} class="active"{% endif %}>{{ item.title }}</a>
+        {% endfor %}
+        <a href="{{ site.wordpress_url }}" class="ext">Main site ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>{{ site.title }} · University of Puerto Rico, Río Piedras</span>
+      <span>
+        <a href="{{ site.wordpress_url }}">Main site</a> ·
+        <a href="{{ site.github_url }}">GitHub</a>
+      </span>
+    </div>
+  </footer>
+</body>
+</html>
