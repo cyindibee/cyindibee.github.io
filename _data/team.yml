@@ -22,17 +22,17 @@
 # --- Researchers ---
 
 - name: "Yahir [Apellido]"
-  group: researcher
+  group: undergraduate
   program: "[Programa], UPRRP"
 
 - name: "Joxanniel J. Irizarry Estrella"
-  group: researcher
+  group: undergraduate
   program: "Undergraduate Student, Computer Science, UPRRP"
   project: "Pollen detection dataset: labeling bee tracks with BeeTagger"
   advisor: "Rémi Mégret"
 
 - name: "[Nombre] Aparicio"
-  group: researcher
+  group: undergraduate
   program: "[Programa], UPRRP"
 
 # --- Graduate students ---
