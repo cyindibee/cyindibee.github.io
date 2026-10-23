@@ -1,0 +1,138 @@
+# Team members, shown on /team/ grouped by `group`.
+# To add a person, copy a block and fill it in. Fields you don't have can be left out.
+#
+#   group:   faculty | researcher | graduate | undergraduate | alumni
+#   photo:   /assets/img/team/<file>.jpg  (square, ~400x400). Empty = initials.
+#   program: e.g. "Ph.D. Student, Computer Science, UPRRP"
+#   project: one line, what they work on
+#   advisor: name of the mentor (for students)
+#   bio:     2-3 sentences, shown under the card
+#   links:   optional list, e.g.
+#              links:
+#                - label: Website
+#                  url: https://...
+
+# --- Faculty ---
+
+- name: "Rémi Mégret"
+  group: faculty
+  program: "Principal Investigator · Professor of Computer Science, UPRRP"
+  bio: "Computer vision and machine learning applied to biology, ecology and materials science."
+
+# --- Researchers ---
+
+- name: "Yahir [Apellido]"
+  group: researcher
+  program: "[Programa], UPRRP"
+
+- name: "Joxanniel J. Irizarry Estrella"
+  group: researcher
+  program: "Undergraduate Student, Computer Science, UPRRP"
+  project: "Pollen detection dataset: labeling bee tracks with BeeTagger"
+  advisor: "Rémi Mégret"
+
+- name: "[Nombre] Aparicio"
+  group: researcher
+  program: "[Programa], UPRRP"
+
+# --- Graduate students ---
+
+- name: "Emilia Couret"
+  group: graduate
+  program: "Graduate Student, Computer Science, UPRRP"
+
+- name: "Sebastianhasser Jansasoy-Molina"
+  group: graduate
+  program: "Graduate Student, Computer Science, UPRRP"
+
+# --- Undergraduate students ---
+
+- name: "Pablo Campos"
+  group: undergraduate
+  program: "Undergraduate Student, Computer Science, UPRRP"
+
+- name: "Pablo U Torres-Arroyo"
+  group: undergraduate
+  program: "Undergraduate Student, Computer Science, UPRRP"
+
+- name: "Nestor Martinez-Rivera"
+  group: undergraduate
+  program: "Undergraduate Student, Computer Science, UPRRP"
+
+- name: "Samuel Maldonado"
+  group: undergraduate
+  program: "Undergraduate Student, Computer Science, UPRRP"
+
+# --- Alumni / former members ---
+
+- name: "Carlos Corrada-Bravo"
+  group: alumni
+  program: "Former Co-PI · Professor of Computer Science, UPRRP"
+
+- name: "Marie Lluberes"
+  group: alumni
+  program: "Former Co-PI · Assistant Professor of Computer Science, UPRRP"
+
+- name: "Jose Agosto-Rivera"
+  group: alumni
+  program: "Former Co-PI · Professor of Biology, UPRRP"
+
+- name: "Tugrul Giray"
+  group: alumni
+  program: "Former Co-PI · Professor of Biology, UPRRP"
+
+- name: "Josue Rodriguez Cordero"
+  group: alumni
+  program: "Former Researcher, UPRRP"
+
+- name: "Luke Meyers"
+  group: alumni
+  program: "Graduate Student, Computer Science, UPRRP"
+
+- name: "Andrea Nieves"
+  group: alumni
+  program: "Graduate Student, Computer Science, UPRRP"
+
+- name: "Christian Matos Rivera"
+  group: alumni
+  program: "Graduate Student, Computer Science, UPRRP"
+
+- name: "Yilmaz Berk"
+  group: alumni
+  program: "Graduate Student, Biology, UPRRP"
+
+- name: "Kenjiro Garcia"
+  group: alumni
+  program: "Graduate Student, Computer Science, UPRRP"
+
+- name: "Andres Ramos"
+  group: alumni
+  program: "Graduate Student, Computer Science, UPRRP"
+
+- name: "Carlos Perez Vinelli"
+  group: alumni
+  program: "Graduate Student, Computer Science, UPRRP"
+
+- name: "Andrea Jaime Gomez"
+  group: alumni
+  program: "Undergraduate Student, Universidad de los Andes (Colombia)"
+
+- name: "Felix F Arzola-Cabrera"
+  group: alumni
+  program: "Undergraduate Student, Computer Science, UPRRP"
+
+- name: "Adriana Hernandez"
+  group: alumni
+  program: "Undergraduate Student, Computer Science, UPRRP"
+
+- name: "Jose Plaud"
+  group: alumni
+  program: "Undergraduate Student, Computer Science, UPRRP"
+
+- name: "Luis Aviles"
+  group: alumni
+  program: "Undergraduate Student, Computer Science, UPRRP"
+
+- name: "Roan Morgan"
+  group: alumni
+  program: "Undergraduate Student, Cal Poly San Luis Obispo"
