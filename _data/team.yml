@@ -19,6 +19,23 @@
   program: "Principal Investigator · Professor of Computer Science, UPRRP"
   bio: "Computer vision and machine learning applied to biology, ecology and materials science."
 
+- name: "Carlos Corrada-Bravo"
+  group: faculty
+  program: "Co-PI · Professor of Computer Science, UPRRP"
+
+- name: "Marie Lluberes"
+  group: faculty
+  program: "Co-PI · Assistant Professor of Computer Science, UPRRP"
+
+- name: "Jose Agosto-Rivera"
+  group: faculty
+  program: "Co-PI · Professor of Biology, UPRRP"
+
+- name: "Tugrul Giray"
+  group: faculty
+  program: "Co-PI · Professor of Biology, UPRRP"
+
+
 # --- Researchers ---
 
 - name: "Yahir De Aza"
@@ -69,25 +86,10 @@
 
 # --- Alumni / former members ---
 
-- name: "Carlos Corrada-Bravo"
-  group: alumni
-  program: "Former Co-PI · Professor of Computer Science, UPRRP"
-
-- name: "Marie Lluberes"
-  group: alumni
-  program: "Former Co-PI · Assistant Professor of Computer Science, UPRRP"
-
-- name: "Jose Agosto-Rivera"
-  group: alumni
-  program: "Former Co-PI · Professor of Biology, UPRRP"
-
-- name: "Tugrul Giray"
-  group: alumni
-  program: "Former Co-PI · Professor of Biology, UPRRP"
 
 - name: "Josue Rodriguez Cordero"
   group: alumni
-  program: "Former Researcher, UPRRP"
+  program: "Researcher, UPRRP"
 
 - name: "Luke Meyers"
   group: alumni
