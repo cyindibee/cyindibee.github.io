@@ -5,6 +5,8 @@ permalink: /team/
 groups:
   - id: faculty
     title: Faculty
+  - id: collaborator
+    title: Collaborators
   - id: researcher
     title: Researchers
   - id: graduate

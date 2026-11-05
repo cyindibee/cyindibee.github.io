@@ -1,0 +1,7 @@
+<li class="news-item">
+  <time datetime="{{ include.n.date | date_to_xmlschema }}">{{ include.n.date | date: "%B %-d, %Y" }}</time>
+  <div>
+    <h3>{{ include.n.title }}</h3>
+    {{ include.n.content | markdownify }}
+  </div>
+</li>

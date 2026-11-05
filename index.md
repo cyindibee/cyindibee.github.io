@@ -2,39 +2,45 @@
 title: Home
 ---
 
-<section class="hero">
-  <h1>CyIndiBee</h1>
-  <p class="lead">Computer vision and edge computing for monitoring individual honey bees — University of Puerto Rico, Río Piedras.</p>
-  <p>
-    <a class="btn primary" href="{{ site.wordpress_url }}">Visit the main site</a>
-    <a class="btn" href="{{ '/publications/' | relative_url }}">Publications</a>
-  </p>
+<section class="hero{% if site.hero_image %} has-image{% endif %}">
+  <div class="hero-text">
+    <h1>CyIndiBee</h1>
+    <p class="lead">CyberInfrastructure for video analysis of individual bee behavior. We build computer vision tools that track and identify individual honey bees in video, so biologists can study their behavior at scale.</p>
+    <p class="hero-meta">University of Puerto Rico, Río Piedras</p>
+  </div>
+  {% if site.hero_image %}
+  <img class="hero-image" src="{{ site.hero_image | relative_url }}" alt="{{ site.hero_image_alt }}">
+  {% endif %}
 </section>
 
-## On the main site
+## Learn more
 
-<div class="cards">
-  <a class="card" href="{{ site.wordpress_url }}">
-    <strong>News &amp; posts</strong>
-    <span>Latest updates, photos and project news.</span>
-  </a>
-  <a class="card" href="{{ site.wordpress_url }}">
+<div class="cards learn-more">
+  <a class="card" href="{{ '/about/' | relative_url }}">
     <strong>About the project</strong>
-    <span>Goals, funding and collaborators.</span>
+    <span>Goals, approach and funding.</span>
   </a>
   <a class="card" href="{{ '/team/' | relative_url }}">
     <strong>Team</strong>
-    <span>Faculty and students working on CyIndiBee.</span>
+    <span>Faculty, students and collaborators.</span>
+  </a>
+  <a class="card" href="{{ '/publications/' | relative_url }}">
+    <strong>Publications</strong>
+    <span>Papers produced by the project.</span>
+  </a>
+  <a class="card" href="{{ '/code-data/' | relative_url }}">
+    <strong>Code &amp; Data</strong>
+    <span>Software and datasets.</span>
   </a>
 </div>
 
-## Recent publications
+## Recent news
 
-<ul class="pubs">
-{% assign pubs = site.publications | sort: "date" | reverse %}
-{% for p in pubs limit: 3 %}
-  {% include pub-item.html p=p %}
+{% assign news = site.news | sort: "date" | reverse %}
+<ul class="news">
+{% for n in news limit: 3 %}
+  {% include news-item.html n=n %}
 {% endfor %}
 </ul>
 
-<p><a href="{{ '/publications/' | relative_url }}">All publications →</a></p>
+<p><a class="btn" href="{{ '/news/' | relative_url }}">More news</a></p>

@@ -18,7 +18,6 @@
           {% if item.url == '/publications/' and page.collection == 'publications' %}{% assign active = true %}{% endif %}
           <a href="{{ item.url | relative_url }}"{% if active %} class="active"{% endif %}>{{ item.title }}</a>
         {% endfor %}
-        <a href="{{ site.wordpress_url }}" class="ext">Main site ↗</a>
       </nav>
     </div>
   </header>
@@ -29,11 +28,15 @@
 
   <footer class="site-footer">
     <div class="wrap">
-      <span>{{ site.title }} · University of Puerto Rico, Río Piedras</span>
-      <span>
-        <a href="{{ site.wordpress_url }}">Main site</a> ·
+      <div class="funding">
+        {% assign nsf_logo = site.static_files | where: "path", site.nsf.logo | first %}
+        {% if nsf_logo %}<img src="{{ site.nsf.logo | relative_url }}" alt="National Science Foundation logo" width="40" height="40">{% endif %}
+        <p>This project is funded by the National Science Foundation, under grant <a href="{{ site.nsf.award_url }}">{{ site.nsf.award }}</a>: “{{ site.nsf.title }}”</p>
+      </div>
+      <div class="footer-meta">
+        <span>{{ site.title }} · University of Puerto Rico, Río Piedras</span>
         <a href="{{ site.github_url }}">GitHub</a>
-      </span>
+      </div>
     </div>
   </footer>
 </body>

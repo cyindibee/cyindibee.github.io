@@ -1,7 +1,7 @@
 # Team members, shown on /team/ grouped by `group`.
 # To add a person, copy a block and fill it in. Fields you don't have can be left out.
 #
-#   group:   faculty | researcher | graduate | undergraduate | alumni
+#   group:   faculty | collaborator | researcher | graduate | undergraduate | alumni
 #   photo:   /assets/img/team/<file>.jpg  (square, ~400x400). Empty = initials.
 #   program: e.g. "Ph.D. Student, Computer Science, UPRRP"
 #   project: one line, what they work on
@@ -35,6 +35,12 @@
   group: faculty
   program: "Co-PI · Professor of Biology, UPRRP"
 
+
+# --- Collaborators ---
+
+- name: "David Flores"
+  group: collaborator
+  program: "Professor and Researcher"
 
 # --- Researchers ---
 

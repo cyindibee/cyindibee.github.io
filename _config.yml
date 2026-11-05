@@ -3,24 +3,43 @@ description: Computer vision for monitoring honey bees — University of Puerto 
 url: "https://cyindibee.github.io"
 baseurl: ""
 
-# Main WordPress site
-wordpress_url: "https://cyindibee.hpcf.upr.edu/"
 github_url: "https://github.com/cyindibee"
+
+# Funding line shown in the footer of every page.
+# Put the official NSF logo at assets/img/nsf-logo.png (it is shown only if the file exists).
+nsf:
+  award: "2318597"
+  award_url: "https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2318597"
+  title: "CISE-MSI: DP: SaTC: CyIndiBee – CyberInfrastructure for video analysis of individual bee behavior"
+  logo: /assets/img/nsf-logo.png
+
+# Image on the right of the home page intro. Leave empty to show text only.
+hero_image:
+hero_image_alt: "Two honey bees at the hive entrance, one paint-marked and one with a number tag, with their tracked bounding boxes and trajectories"
 
 # Top navigation (order matters)
 nav:
   - title: Home
     url: /
+  - title: About
+    url: /about/
+  - title: News
+    url: /news/
   - title: Team
     url: /team/
   - title: Publications
     url: /publications/
+  - title: Code & Data
+    url: /code-data/
 
-# Each paper is one file in _publications/ and gets its own page
+# Each paper is one file in _publications/ and gets its own page.
+# Each news item is one file in _news/ named YYYY-MM-DD-short-title.md; they are shown on /news/.
 collections:
   publications:
     output: true
     permalink: /papers/:name/
+  news:
+    output: false
 
 defaults:
   - scope:
