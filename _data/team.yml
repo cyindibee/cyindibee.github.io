@@ -50,13 +50,13 @@
   project: "Pollen detection dataset: labeling bee tracks with BeeTagger"
   advisor: "Rémi Mégret"
 
-- name: "Luis Aparicio"
+- name: "Luis F Aparicio Mestra"
   group: undergraduate
   program: "Undergraduate Student, Computer Science, UPRRP"
 
 # --- Graduate students ---
 
-- name: "Emilia Couret"
+- name: "Emilia Couret Villafañe"
   group: graduate
   program: "Graduate Student, Computer Science, UPRRP"
 
@@ -82,7 +82,7 @@
   group: undergraduate
   program: "Undergraduate Student, Computer Science, UPRRP"
 
-- name: "Samuel Maldonado"
+- name: "Samuel J Maldonado Batista"
   group: undergraduate
   program: "Undergraduate Student, Computer Science, UPRRP"
 
