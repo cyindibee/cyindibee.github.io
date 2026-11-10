@@ -44,10 +44,6 @@
 
 # --- Researchers ---
 
-- name: "Yahir De Aza"
-  group: undergraduate
-  program: "Undergraduate Student, Computer Science, UPRRP"
-
 - name: "Joxanniel J. Irizarry Estrella"
   group: undergraduate
   program: "Undergraduate Student, Computer Science, UPRRP"
@@ -74,7 +70,7 @@
 
 # --- Undergraduate students ---
 
-- name: "Pablo Campos"
+- name: "Pablo J Campos Méndez"
   group: undergraduate
   program: "Undergraduate Student, Computer Science, UPRRP"
 
