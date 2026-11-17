@@ -47,8 +47,6 @@
 - name: "Joxanniel J. Irizarry Estrella"
   group: undergraduate
   program: "Undergraduate Student, Computer Science, UPRRP"
-  project: "Pollen detection dataset: labeling bee tracks with BeeTagger"
-  advisor: "Rémi Mégret"
 
 - name: "Luis F Aparicio Mestra"
   group: undergraduate
